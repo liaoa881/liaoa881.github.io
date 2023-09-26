@@ -1,0 +1,132 @@
+body{
+background-color: rgb(11, 8, 40); 
+color: aliceblue;
+font-family: "lulo-one", sans-serif;
+font-size: 20px;
+font-weight: 400;
+font-style: normal;
+}
+
+.header{
+    
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    }
+
+h2{
+    font-family: lulo-outline, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.thump{
+    width: 90%;
+    position: relative;
+    transform: translate(-50%,-50%);
+    bottom: 200%;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+.thump span{
+    display: inline-block;
+    font-family: lulo-one, sans-serif;
+    font-size: 250px;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(35, 35, 255);
+    position: relative;
+    transform: translateY(-500px);
+    animation: fall .5s forwards;
+
+}
+
+@keyframes fall{
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.thump span:nth-child(2) {
+    animation-delay: 0.07s;
+}
+.thump span:nth-child(3) {
+    animation-delay: .14s;
+}
+.thump span:nth-child(4) {
+    animation-delay: .21s;
+}
+.thump span:nth-child(5) {
+    animation-delay: .28s;
+}
+
+
+.thump span:hover{
+    color: rgb(244, 250, 255);
+    transition: all 0.2s linear;
+}
+
+pre{
+    color: rgb(103, 150, 192);
+    font-family: verdana;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+  
+}
+
+pre span{
+    color: rgb(255, 255, 255);
+    font-family: verdana;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+pre span:hover{
+    color: rgb(247, 255, 10);
+    font-family: verdana;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.woah{
+    color: rgb(255, 255, 241);
+    font-family:"lulo-one", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    font-style: normal;
+    transform: rotate(0deg);
+    transition: 1.5s;
+    text-align: center;
+
+}
+
+.woah:hover{
+    color: rgb(255, 157, 0);
+    font-family:"lulo-one", sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    font-style: normal;
+    transform: rotate(360deg);
+}
+
+img{
+    width: 50%;
+    height: 50%;
+    transform: rotate(0deg);
+    transition: 1.5s;
+}
+
+img:hover{
+    width: 50%;
+    height: 50%;
+    transform: rotate(360deg);
+}
