@@ -1,0 +1,114 @@
+html * {
+    cursor: url("imgs/rockcursor.png"), auto;
+}
+
+body{
+    background-color: #272D2D;
+    color: #f5dfbb;
+    font-size: 20px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 300;
+    
+}
+
+body:hover{
+    background-color: #fb3640;
+    color: #f5dfbb;
+    font-size: 20px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 300;
+    
+}
+
+.header{
+    color: #fb3640;
+    font-family: "lulo-onee", sans-serif;
+    font-weight: 400;
+    font-style: normal;     
+    text-align: center;
+}
+
+h1 {
+    color: #fb3640;
+    font-size: 250px;
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: 
+    "SEIS" 0, "wght" 100;
+    transition: all 1s ease-in-out, font-variation-setting 1s;
+   
+}
+
+h1:hover{
+    color: #272D2D;
+    font-variation-settings: 
+    "wght" 700, "SEIS" 100; 
+}
+
+h2 {
+    color: #fb3640;
+    font-size: 100px;
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: 
+    "SEIS" 0, "wght" 100;
+    transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out, font-variation-setting 1s;
+   
+}
+
+h2:hover{
+    color: #f5dfbb;
+    letter-spacing: 5px;
+    font-variation-settings: 
+    "wght" 100, "SEIS" 100; 
+}
+
+pre{
+    color: #f5dfbb;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 300;
+    transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out, font-variation-setting 1s;
+
+}
+
+.stretched span{
+    color: #f5dfbb;
+    letter-spacing: 5px;
+    font-size: 30px;
+    transition: all 1s ease-in-out;
+    /* transition helped fix transition code error */
+    transition: all 1s ease-in-out, font-variation-setting 1s;
+}
+
+.stretched span:hover{
+    color: #98D2EB;
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 800;
+
+}
+
+.spring {
+    color: #272D2D;
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-family: "seismic-latin-variable", sans-serif;
+    text-align: center;
+    font-variation-settings: 
+    "SEIS" 30, "wght" 100;
+    transition: all 1s ease-in-out, font-variation-setting 1s;
+   
+}
+
+.spring:hover{
+    color: #c2edff;
+    background-color:#6DBFE3;
+    border-radius: 20px;
+    padding: 30px;
+    font-variation-settings: 
+    "wght" 500, "SEIS" 100; 
+    letter-spacing: 10px;
+}
