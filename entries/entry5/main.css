@@ -1,0 +1,264 @@
+html * {
+    cursor: url("assets/hand.png"), auto;
+}
+
+body{
+    background: rgb(91,63,90);
+    background: linear-gradient(0deg, rgba(91,63,90,1) 4%, rgba(23,55,83,1) 46%, rgba(10,15,41,1) 100%);
+    color: #ffd5d7;
+    font-size: 20px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 300;
+    margin-bottom: 50%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.header{
+    color: #ffffff;
+    font-size: 50px;
+    font-family: "capucine-web", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 200px;
+
+}
+
+h2 {
+    font-family: "seismic-latin-variable", sans-serif;
+    font-variation-settings: 
+    "SEIS" 0, "wght" 100;
+    transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out, font-variation-setting 1s;
+   
+}
+
+h2:hover{
+    color: #f5dfbb;
+    letter-spacing: 5px;
+    font-variation-settings: 
+    "wght" 100, "SEIS" 100; 
+}
+
+.box{
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    background-color: #FFF07C ;
+    left: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.hid-box{
+    top: 100%;
+    position: relative;
+    transition: all .5s ease-out;
+    background-color:#FFF07C ;
+    height: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.box:hover > .hid-box {
+    top: 0;
+}
+
+.boxtwo{
+    height: 500px;
+    width: 500px;
+    border-radius: 50px;
+    margin-left: 700px;
+    bottom: 300px;
+    overflow: hidden;
+    background-color: #ff799f ;
+    left: 200px;
+    position: relative;
+    z-index: 2;
+}
+
+.hid-boxtwo{
+    top: 100%;
+    position: relative;
+    right: 100px;
+    transition: all .5s ease-out;
+    background-color:#ff799f  ;
+    height: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.boxtwo:hover > .hid-boxtwo {
+    top: 0;
+}
+
+.glow {
+    font-size: 80px;
+    color: #fcfcfc;
+    text-align: center;
+    -webkit-animation: glow 3s ease-in-out infinite alternate;
+    -moz-animation: glow 3s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ffb6b6, 0 0 20px #ff6f6f, 0 0 30px #1a043e, 0 0 40px;
+    }
+    to {
+      text-shadow: 0 0 20px #ffb6b6, 0 0 30px #ff6f6f, 0 0 40px #17113d, 0 0 ;
+    }
+  }
+
+  
+.notes {
+    color: #221e18;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 500;
+
+}
+.compnotes {
+    color: #e1f5ff;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 200;
+    -webkit-animation: glowtype 3s ease-in-out infinite alternate;
+    -moz-animation: glowtype 3s ease-in-out infinite alternate;
+    animation: glowtype 3s ease-in-out infinite alternate;
+
+}
+
+.backtext{
+    color: #8399aa;
+    z-index: 1;
+    position: absolute;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 300;
+    transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out, font-variation-setting 1s;
+}
+
+.backtext span{
+    color: #f5dfbb;
+    letter-spacing: 5px;
+    font-size: 30px;
+    transition: all 1s ease-in-out;
+    /* transition helped fix transition code error */
+    transition: all 1s ease-in-out, font-variation-setting 1s;
+}
+
+.backtext span:hover{
+    color: #c8b9db;
+    letter-spacing: 10px;
+    font-size: 40px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 800;
+
+}
+
+.notes span{
+    color: #1a1713;
+    letter-spacing: 5px;
+    font-size: 30px;
+    transition: all 1s ease-in-out;
+    /* transition helped fix transition code error */
+    transition: all 1s ease-in-out, font-variation-setting 1s;
+}
+
+.notes span:hover{
+    color: #000000;
+    letter-spacing: 20px;
+    font-size: 40px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 800;
+
+}
+
+.compnotes span{
+    color: #d7f6ff;
+    letter-spacing: 5px;
+    font-size: 30px;
+    transition: all 1s ease-in-out;
+    /* transition helped fix transition code error */
+    transition: all 1s ease-in-out, font-variation-setting 1s;
+}
+
+.compnotes span:hover{
+    color: #d7f6ff;
+    letter-spacing: 20px;
+    font-size: 40px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 800;
+
+}
+
+
+.boxthree{
+    height: 500px;
+    opacity: 90%;
+    width: 1000px;
+    overflow: hidden;
+    background-color: #2892D7 ;
+    border-radius: 60px;
+    left: 40px;
+    position: relative;
+    z-index: 1;
+    bottom: 400px;
+    box-shadow: 0 0 10px #6DAEDB inset;
+    -webkit-animation: glownote 3s ease-in-out infinite alternate;
+    -moz-animation: glownote 3s ease-in-out infinite alternate;
+    animation: glownote 3s ease-in-out infinite alternate;
+}
+
+.hid-boxthree{
+    top: 100%;
+    right: 400px;
+    position: relative;
+    transition: all .5s ease-out;
+    background-color:#2892D7 ;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.boxthree:hover > .hid-boxthree {
+    top: 0;
+}
+
+
+  @-webkit-keyframes glownote {
+    from {
+      box-shadow: 0 0 10px #2892D7, 0 0 20px #6DAEDB, 0 0 30px #1a043e, 0 0 40px;
+    }
+    to {
+        box-shadow: 0 0 20px #2892D7, 0 0 30px #6DAEDB, 0 0 40px #17113d, 0 0 ;
+    }
+  }
+
+  @-webkit-keyframes glowtype {
+    from {
+      text-shadow: 0 0 10px #2892D7, 0 0 20px #6DAEDB, 0 0 30px #1a043e, 0 0 40px;
+    }
+    to {
+       text-shadow: 0 0 20px #2892D7, 0 0 30px #6DAEDB, 0 0 40px #17113d, 0 0 ;
+    }
+  }
+
+
+
+
+
+
+
