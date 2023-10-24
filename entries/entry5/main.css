@@ -19,14 +19,15 @@ body{
 .header{
     color: #ffffff;
     font-size: 50px;
-    font-family: "capucine-web", sans-serif;
-    font-weight: 900;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 700;
     font-style: italic;
     text-align: center;
 }
 
 h1 {
     color: #ffffff;
+    letter-spacing: 20px;
     font-size: 200px;
 
 }
@@ -256,9 +257,10 @@ h2:hover{
     }
   }
 
-
-
-
+ ::selection { 
+    background: rgb(0, 29, 145);
+    color: #ffa8fe;
+ }
 
 
 

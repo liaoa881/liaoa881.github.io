@@ -167,11 +167,20 @@ h2:hover {
     }
 }
 
+::selection { 
+    background: rgb(214, 222, 255);
+    color: #000000;
+ }
+
 @media (max-width: 650px) {
     body {
       background-color: rgb(255, 254, 254);
       color:  rgb(33, 33, 33);
     }
+    ::selection { 
+        background: rgb(0, 0, 0);
+        color: #232bff;
+     }
     h1{
       font-size: 50px;
       margin-bottom: 0;
@@ -277,4 +286,9 @@ h2:hover {
         font-size: 50px;
     }
    
+    ::selection { 
+        background: rgb(186, 249, 255);
+        color: #1d1e3c;
+     }
   }
+

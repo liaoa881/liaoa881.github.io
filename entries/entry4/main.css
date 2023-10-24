@@ -112,3 +112,8 @@ pre{
     "wght" 500, "SEIS" 100; 
     letter-spacing: 10px;
 }
+
+::selection { 
+    background: rgb(57, 55, 55);
+    color: #fb3640;
+ }
