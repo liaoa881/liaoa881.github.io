@@ -117,3 +117,54 @@ pre{
     background: rgb(57, 55, 55);
     color: #fb3640;
  }
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.navhead{
+    position: absolute;
+    font-family: monospace;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #fb3640;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+ font-size: 18px;
+ position: relative;
+ color: white;
+ text-decoration: none;
+ margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+   }
+
+   .navbar a:hover::before {
+    width: 100%;
+   }
