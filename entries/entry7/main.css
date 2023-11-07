@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html * {
+    cursor: url("assets/cursor.png"), auto;
+}
+
+body{
+    background-color: #697478;
+    color: #aaaaaa;
+    font-size: 20px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+    transition: all 1s ease-in-out;
+}
+
+.module {
+    position: relative;
+  }
+
+  .module::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url(assets/bg2.png);
+    filter: blur(10px) grayscale(100%);
+    transition: all 1s ease-in-out;
+  }
+  .module:hover:before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url(assets/bg2.png);
+    filter: grayscale(20%);
+    filter: blur(0px) grayscale(0%);
+  }
+  
+  .module-inside {
+    position: relative;
+  }
+  
+
+body:hover{
+    background-color: #00bfff;
+    color: #ffdbfe;
+}
+.title{
+    font-family: "gal-gothic-variable",sans-serif;
+    font-variation-settings: "wght" 300;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+h1{
+    color: #c3c3c3;
+    font-size: 120px;
+    font-variation-settings: "wght" 500;
+    transition: all 1s ease-in-out, font-variation-setting 1s;
+   }
+
+h1:hover{
+    color: #fff6be;
+    font-size: 150px;
+    font-variation-settings: "wght" 800;
+    letter-spacing: 5px;
+   }
+
+h2{
+    color: #938993;
+    font-size: 80px;
+    font-variation-settings: "wght" 300;
+    transition: all 1s ease-in-out, font-variation-setting 1s;
+}
+
+h2:hover{
+    color: rgb(249, 255, 171);
+    font-size: 100px;
+    font-variation-settings: "wght" 500;
+    letter-spacing: 5px;
+}
+
+
+.navhead{
+    position: absolute;
+    font-family: monospace;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #1783ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a {
+ font-size: 18px;
+ position: relative;
+ color: white;
+ text-decoration: none;
+ margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+   }
+
+   .navbar a:hover::before {
+    width: 100%;
+   }
+
+
+   .pill-1{
+    fill:#facaff;
+    }
+   .pill-2{
+    fill:#39a1ff;
+   }
+   .pill-3{
+    fill:#003654;
+   }
+   
+
+  pre{
+    z-index: 2;
+    display: absolute;
+    color: rgb(184, 184, 184);
+    font-family: "gal-gothic-variable",sans-serif;
+    font-variation-settings: "wght" 400;
+    letter-spacing: 5px;
+    font-size: 20px;
+    transition: all .8s ease-in-out, font-variation-setting 1s;
+  }
+
+  pre:hover{
+    color: rgb(255, 242, 142);
+  }
+
+  span{
+    color: rgb(184, 184, 184);
+    font-family: "gal-gothic-variable",sans-serif;
+    font-variation-settings: "wght" 500;
+    letter-spacing: 5px;
+    font-size: 30px;
+    transition: all .8s ease-in-out, font-variation-setting 1s;
+  }
+
+  span:hover{
+    color: rgb(255, 175, 175);
+    font-family: "gal-gothic-variable",sans-serif;
+    font-variation-settings: "wght" 800;
+    letter-spacing: 10px;
+    font-size: 40px;
+   
+  }
+
+  .container{
+   
+    display: absolute;
+    padding-left: 500px;
+   }
+
+
+   .cls-1{
+    fill:#ffafa9;
+}
+   .cls-1,.cls-2{
+    stroke-width:22.75px;
+}
+   .cls-1,.cls-2,.cls-3{
+    stroke:#003654;stroke-miterlimit:10;
+}
+   .cls-2{
+    fill:#ffe98a;
+}
+   .cls-3{
+    fill:none;stroke-linecap:round;stroke-width:52.24px;
+}
+
+img{
+    height: 20%;
+    width: 20%;
+    filter: blur(10px) grayscale(100%);
+    transition: .8s ease-in-out;
+}
+
+img:hover{
+    height: 20%;
+    width: 20%;
+    filter: blur(0px) grayscale(0%);
+}
+#smile {
+    display: absolute;
+    z-index: -100;
+    height:200px;
+    animation-play-state: paused;
+    transform-origin: center center;
+    filter: grayscale(100%);
+    transition: 1s ease-in-out;
+    
+  }
+
+  #smile:hover {
+    animation-play-state: start;
+    animation: pillSpin 4s ease-out infinite;
+    cursor: pointer;
+    filter: grayscale(0%);
+    transition: 1s ease-in-out;
+  }
+
+   #pill {
+    display: absolute;
+    z-index: -100;
+    height:550px;
+    animation-play-state: paused;
+    transform-origin: center center;
+    top: 20%;
+    bottom: 20%;
+    filter: grayscale(100%);
+    transition: 1s ease-in-out;
+    
+  }
+
+  #pill:hover {
+    animation-play-state: start;
+    animation: pillSpin 4s ease-out infinite;
+    cursor: pointer;
+    filter: grayscale(0%);
+    transition: 1s ease-in-out;
+  }
+
+
+  
+  @keyframes pillSpin {
+    0% {
+    
+      transform: rotate(0turn);
+    }
+    100% {
+      transform: rotate(1turn);
+     
+    }
+  }
+  
