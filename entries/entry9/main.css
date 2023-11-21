@@ -223,7 +223,7 @@ h2:hover{
 .front-layer img:nth-child(3){
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 10%;
     width: 50%;
 }
 
