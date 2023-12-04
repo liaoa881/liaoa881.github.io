@@ -98,3 +98,23 @@ pre{
    .navbar a:hover::before {
     width: 100%;
    }
+
+   @media (max-width: 650px) {
+    pre {
+        font-size: 5px;
+    }
+    marquee{
+        font: size 15px;
+        color:rgb(35, 115, 235);
+        font-family: monospace;
+        text-align: center;
+    }
+    h2{
+        font-size: 10px;
+        color:rgb(255, 255, 255);
+        display:block;
+        font-family: monospace;
+        text-align: center;
+    
+    }
+ }

@@ -5,6 +5,7 @@ font-family: "lulo-one", sans-serif;
 font-size: 20px;
 font-weight: 400;
 font-style: normal;
+transition: .5s ease-in-out .5s;
 }
 
 .head{
@@ -30,6 +31,7 @@ h2{
     top: 50%;
     left: 50%;
     text-align: center;
+    
 }
 
 .thump span{
@@ -42,6 +44,7 @@ h2{
     position: relative;
     transform: translateY(-500px);
     animation: fall .5s forwards;
+    transition: .5s ease-in-out .5s;
 
 }
 
@@ -66,7 +69,7 @@ h2{
 
 
 .thump span:hover{
-    color: rgb(244, 250, 255);
+    color: rgb(255, 255, 255);
     transition: all 0.2s linear;
 }
 
@@ -76,6 +79,7 @@ pre{
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
+    transition: .5s ease-in-out .5s;
   
 }
 
@@ -85,6 +89,7 @@ pre span{
     font-size: 20px;
     font-weight: 400;
     font-style: normal;
+    transition: .5s ease-in-out .5s;
 
 }
 
@@ -145,7 +150,7 @@ img:hover{
 
 }
   
-  @-webkit-keyframes glownote {
+  @keyframes glownote {
     from {
       box-shadow: 0 0 10px #ffc493, 0 0 20px #6DAEDB, 0 0 30px #b486ff, 0 0 40px;
     }
@@ -203,4 +208,91 @@ img:hover{
 
    .navbar a:hover::before {
     width: 100%;
+   }
+
+   @media (max-width: 650px) {
+    
+    .thump span{
+        display: inline-block;
+        font-family: lulo-one, sans-serif;
+        font-size: 70px;
+        font-weight: 700;
+        font-style: normal;
+        color: rgb(241, 255, 90);
+        position: relative;
+        transform: translateY(-500px);
+        animation: fall .5s forwards;
+    
+    }
+    .head{
+    
+        color: aliceblue;
+        font-size: 30px;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        }
+    
+    h2{
+        font-family: lulo-outline, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    pre{
+        color: rgb(103, 150, 192);
+        font-family: verdana;
+        font-size: 10px;
+        font-weight: 400;
+        font-style: normal;
+      
+    }
+    
+    pre span{
+        color: rgb(255, 255, 255);
+        font-family: verdana;
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+    
+    }
+    
+    pre span:hover{
+        color: rgb(247, 255, 10);
+        font-family: verdana;
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+    
+    }
+    
+    .woah{
+        color: rgb(255, 255, 241);
+        font-family:"lulo-one", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        font-style: normal;
+        transform: rotate(0deg);
+        transition: 1.5s;
+        text-align: center;
+    
+    }
+    
+    .woah:hover{
+        color: rgb(255, 157, 0);
+        font-family:"lulo-one", sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        font-style: normal;
+        transform: rotate(360deg);
+    }
+    
+    body{
+        background-color: rgb(51, 36, 181); 
+        color: aliceblue;
+        font-family: "lulo-one", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+        }
    }

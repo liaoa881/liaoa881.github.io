@@ -76,9 +76,9 @@ html * {
   
   .button {
     position: absolute;
-    left: 58%;
+    left: 62%;
     transform: translate(-50%,-50%);
-    top: 44%;
+    top: 48%;
     padding: 20px 50px;
     border-radius: 30px;
     background-color:#ff3d3d;
@@ -97,9 +97,9 @@ html * {
 
   .buttontwo {
     position: absolute;
-    left: 59%;
+    left: 62%;
     transform: translate(-50%,-50%);
-    top: 70%;
+    top: 80%;
     padding: 20px 50px;
     border-radius: 30px;
     background-color:#391fbb;
@@ -214,4 +214,73 @@ span:hover{
 
 @keyframes typing{
     from {width: 0}
+}
+
+@media (max-width: 800px) {
+
+  body{
+    background-color: rgb(233, 185, 130);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: "gal-gothic-variable", sans-serif;
+    font-variation-settings: "wght" 400;
+
+}
+h1{
+  color: #e64524;
+  font-size: 50px;
+  font-variation-settings: "wght" 500;
+  transition: all 1s ease-in-out, font-variation-setting 1s;
+ }
+ pre{
+  font-size: 10px;
+  transform: translate(5%,14%);
+ }
+ .button {
+  position: absolute;
+  left: 56%;
+  transform: translate(-50%,-50%);
+  top: 75%;
+  padding: 20px 50px;
+  border-radius: 30px;
+  background-color:#ff3d3d;
+  color:  #f0c299;
+  font-size:  60px;
+  font-size: 20px;
+  transition:  all 100ms;
+  z-index: 1;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: .8;
+  transition: 8ms ease-out;
+}
+span{
+  font-size: 20px;
+  color: #565656;
+}
+.buttontwo {
+  position: absolute;
+  left: 60%;
+  transform: translate(20%,-50%);
+  top: 85%;
+  padding: 20px 40px;
+  border-radius: 30px;
+  background-color:#391fbb;
+  color:  #f0c299;
+  font-size:  10px;
+  transition:  all 100ms;
+  z-index: 1;
+}
+
+.buttontwo:hover {
+  cursor: pointer;
+  opacity: .8;
+  transition: 8ms ease-out;
+}
+::selection{
+  color: #f0c299;
+  background-color: #006696;
+}
 }

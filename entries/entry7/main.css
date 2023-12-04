@@ -263,3 +263,54 @@ img:hover{
     }
   }
   
+  @media (max-width: 800px) {
+    h1{
+      color: #c3c3c3;
+      font-size: 80px;
+      font-variation-settings: "wght" 500;
+      transition: all 1s ease-in-out, font-variation-setting 1s;
+     }
+  
+  h1:hover{
+      color: #fff6be;
+      font-size: 100px;
+      font-variation-settings: "wght" 800;
+      letter-spacing: 5px;
+     }
+  
+  h2{
+      color: #938993;
+      font-size: 50px;
+      font-variation-settings: "wght" 300;
+      transition: all 1s ease-in-out, font-variation-setting 1s;
+  }
+  
+  h2:hover{
+      color: rgb(249, 255, 171);
+      font-size: 70px;
+      font-variation-settings: "wght" 500;
+      letter-spacing: 5px;
+  }
+  pre{
+    z-index: 2;
+    display: absolute;
+    color: rgb(184, 184, 184);
+    font-family: "gal-gothic-variable",sans-serif;
+    font-variation-settings: "wght" 400;
+    letter-spacing: 5px;
+    font-size: 10px;
+    transition: all .8s ease-in-out, font-variation-setting 1s;
+  }
+  img{
+    height: 40%;
+    width: 40%;
+    filter: blur(10px) grayscale(100%);
+    transition: .8s ease-in-out;
+}
+
+img:hover{
+    height: 40%;
+    width: 40%;
+    filter: blur(0px) grayscale(0%);
+}
+  }

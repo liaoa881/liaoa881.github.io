@@ -12,6 +12,7 @@ body{
     margin-bottom: 50%;
     align-items: center;
     justify-content: center;
+    transition: all 1s ease-in-out, font-variation-setting 1s;
     
 }
 
@@ -109,7 +110,7 @@ h2:hover{
     animation: glow 3s ease-in-out infinite alternate;
   }
   
-  @-webkit-keyframes glow {
+  @keyframes glow {
     from {
       text-shadow: 0 0 10px #ffb6b6, 0 0 20px #ff6f6f, 0 0 30px #1a043e, 0 0 40px;
     }
@@ -239,7 +240,7 @@ h2:hover{
 }
 
 
-  @-webkit-keyframes glownote {
+  @keyframes glownote {
     from {
       box-shadow: 0 0 10px #2892D7, 0 0 20px #6DAEDB, 0 0 30px #1a043e, 0 0 40px;
     }
@@ -248,7 +249,7 @@ h2:hover{
     }
   }
 
-  @-webkit-keyframes glowtype {
+  @keyframes glowtype {
     from {
       text-shadow: 0 0 10px #2892D7, 0 0 20px #6DAEDB, 0 0 30px #1a043e, 0 0 40px;
     }
@@ -313,4 +314,186 @@ h2:hover{
 
    .navbar a:hover::before {
     width: 100%;
+   }
+
+   @media (max-width: 800px) {
+        body{
+            background: rgb(74,84,94);
+            background: linear-gradient(0deg, rgba(74,84,94,1) 0%, rgba(192,123,117,1) 20%, rgba(255,200,108,1) 40%, rgba(255,131,131,1) 91%);
+            margin-bottom: 200%;
+            transition: all 1s ease-in-out, font-variation-setting 1s;
+        }
+        .header{
+            color: #ffffff;
+            font-size: 20px;
+            font-family: "gal-gothic-variable", sans-serif;
+            font-variation-settings: "wght" 700;
+            font-style: italic;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #ffffff;
+            letter-spacing: 10px;
+            font-size: 60px;
+        
+        }
+        
+        h2 {
+            font-family: "seismic-latin-variable", sans-serif;
+            font-variation-settings: 
+            "SEIS" 0, "wght" 100;
+            transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out, font-variation-setting 1s;
+           
+        }
+        .glow {
+            font-size: 40px;
+            color: #fcfcfc;
+            text-align: center;
+            -webkit-animation: glow 3s ease-in-out infinite alternate;
+            -moz-animation: glow 3s ease-in-out infinite alternate;
+            animation: glow 3s ease-in-out infinite alternate;
+          }
+
+          .box{
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+            background-color: #FFF07C ;
+            left: 40px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hid-box{
+            top: 100%;
+            position: relative;
+            transition: all .5s ease-out;
+            background-color:#FFF07C ;
+            height: 100%;
+            text-align: center;
+            z-index: 2;
+        }
+        
+        .box:hover > .hid-box {
+            top: 0;
+        }
+        .notes {
+            color: #221e18;
+            letter-spacing: 5px;
+            font-size: 10px;
+            font-family: "gal-gothic-variable", sans-serif;
+            font-variation-settings: "wght" 500;
+        
+        }
+        .notes span{
+            color: #1a1713;
+            letter-spacing: 5px;
+            font-size: 20px;
+            transition: all 1s ease-in-out;
+            /* transition helped fix transition code error */
+            transition: all 1s ease-in-out, font-variation-setting 1s;
+        }
+        
+        .notes span:hover{
+            color: #561d1d;
+            letter-spacing: 20px;
+            font-size: 25px;
+            font-family: "gal-gothic-variable", sans-serif;
+            font-variation-settings: "wght" 800;
+        
+        }
+
+        .backtext{
+            color: #8399aa;
+            z-index: 1;
+            position: absolute;
+            letter-spacing: 5px;
+            font-size: 10px;
+            font-family: "gal-gothic-variable", sans-serif;
+            font-variation-settings: "wght" 300;
+            transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out, font-variation-setting 1s;
+        }
+        
+        .backtext span{
+            color: #f5dfbb;
+            letter-spacing: 5px;
+            font-size: 20px;
+            transition: all 1s ease-in-out;
+            /* transition helped fix transition code error */
+            transition: all 1s ease-in-out, font-variation-setting 1s;
+        }
+        
+        .backtext span:hover{
+            color: #c8b9db;
+            letter-spacing: 10px;
+            font-size: 25px;
+            font-family: "gal-gothic-variable", sans-serif;
+            font-variation-settings: "wght" 800;
+        
+        }
+        .boxtwo{
+            height: 200px;
+            width: 200px;
+            border-radius: 30px;
+            margin-left: 300px;
+            bottom: 400px;
+            overflow: hidden;
+            background-color: #ff799f ;
+            left: 200px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hid-boxtwo{
+            top: 100%;
+            position: relative;
+            right: 100px;
+            transition: all .5s ease-out;
+            background-color:#ff799f  ;
+            height: 100%;
+            text-align: center;
+            z-index: 2;
+        }
+        
+        .boxtwo:hover > .hid-boxtwo {
+            top: 0;
+        }
+
+        .boxthree{
+            height: 300px;
+            opacity: 90%;
+            width: 600px;
+            overflow: hidden;
+            background-color: #2892D7 ;
+            border-radius: 60px;
+            left: 20px;
+            position: relative;
+            z-index: 1;
+            bottom: 400px;
+            box-shadow: 0 0 10px #6DAEDB inset;
+            -webkit-animation: glownote 3s ease-in-out infinite alternate;
+            -moz-animation: glownote 3s ease-in-out infinite alternate;
+            animation: glownote 3s ease-in-out infinite alternate;
+        }
+        
+        .hid-boxthree{
+            top: 100%;
+            right: 400px;
+            position: relative;
+            transition: all .5s ease-out;
+            background-color:#2892D7 ;
+            height: 100%;
+            text-align: center;
+            z-index: 1;
+        }
+        
+        .boxthree:hover > .hid-boxthree {
+            top: 0;
+        }
+        pre {
+            transform: translate(0%,5%);
+        }
    }
