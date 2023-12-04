@@ -263,7 +263,7 @@ img:hover{
     }
   }
   
-  @media (max-width: 800px) {
+  @media (max-width: 850px) {
     h1{
       color: #c3c3c3;
       font-size: 80px;

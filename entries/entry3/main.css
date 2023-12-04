@@ -210,7 +210,7 @@ img:hover{
     width: 100%;
    }
 
-   @media (max-width: 650px) {
+   @media (max-width: 850px) {
     
     .thump span{
         display: inline-block;

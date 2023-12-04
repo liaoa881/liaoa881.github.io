@@ -73,7 +73,7 @@ h1, h2, strong, em{
     transition: .5s ease-in-out .5s;
    }
 
-   @media (max-width: 650px) {
+   @media (max-width: 850px) {
    pre {
     transition: .5s ease-in-out .5s;
     transform: translate(-120%, 0%);

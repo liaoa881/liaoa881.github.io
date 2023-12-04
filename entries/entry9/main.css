@@ -243,7 +243,7 @@ h2:hover{
     right: 60%;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
     h1{
         font-size: 30px;
     }
@@ -260,4 +260,20 @@ h2:hover{
 body {
     font-size: 10px;
   }
+  .button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 600px;
+    padding: 20px 50px;
+    border-radius: 30px;
+    background-color:   #ffffff;
+    color:  #00b12f;
+    font-size:  60px;
+    font-size: 20px;
+    text-align:  center;
+    transition:  all 100ms;
+    z-index: 2;
+  }
+
 }

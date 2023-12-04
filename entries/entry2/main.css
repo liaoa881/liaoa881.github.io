@@ -99,7 +99,7 @@ pre{
     width: 100%;
    }
 
-   @media (max-width: 650px) {
+   @media (max-width: 850px) {
     pre {
         font-size: 5px;
     }

@@ -316,7 +316,7 @@ h2:hover{
     width: 100%;
    }
 
-   @media (max-width: 800px) {
+   @media (max-width: 850px) {
         body{
             background: rgb(74,84,94);
             background: linear-gradient(0deg, rgba(74,84,94,1) 0%, rgba(192,123,117,1) 20%, rgba(255,200,108,1) 40%, rgba(255,131,131,1) 91%);
