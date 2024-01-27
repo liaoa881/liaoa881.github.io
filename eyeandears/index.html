@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/gjo7mbm.css">
+    <link rel="icon" type="image/png" href="imgs/favicontwo.png">
+    <title>EYES AND EARS HOMEPAGE</title>
+</head>
+<body>
+    <header class = "navhead">
+          <nav class = "navbar">
+            <a href="https://liaoa881.github.io/entries/entry1/">Entry1</a>
+            <a href="https://liaoa881.github.io/entries/entry2/">Entry2</a>
+            <a href="https://liaoa881.github.io/entries/entry3/">Entry3</a>
+            <a href="https://liaoa881.github.io/entries/entry4/">Entry4</a>
+            <a href="https://liaoa881.github.io/entries/entry5/">Entry5</a>
+            <a href="https://liaoa881.github.io/entries/entry6/">Entry6</a>
+            <a href="https://liaoa881.github.io/entries/entry7/">Entry7</a>
+            <a href="https://liaoa881.github.io/entries/entry8/">Entry8</a>
+            <a href="https://liaoa881.github.io/entries/entry9/">Entry9</a>
+            <a href="https://liaoa881.github.io/entries/entry10/">Entry10</a>
+          </nav>
+      </header>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+  
+<div class = "ball">
+  <div class="box">
+    <div class="pupil"></div>
+  </div>
+</div>
+<img src="imgs/ear.png" alt="ear">
+  <script>
+
+    document.querySelector('body').addEventListener('mousemove', eyeball);
+
+    function eyeball(){
+      const eye = document.querySelectorAll('.pupil');
+      eye.forEach(function(eye){
+        let x = (eye.getBoundingClientRect().left) + (eye.
+        clientWidth / 2);
+        let y = (eye.getBoundingClientRect().top) + (eye.
+        clientHeight / 2);
+
+        let radian = Math.atan2(event.pageX - x, event.pageY - y);
+        let rotation = (radian * (180 / Math.PI) * -1) + 270;
+        eye.style.transform = "rotate("+rotation+"deg)"
+      });
+
+    }
+  </script>
+  <div class = "container">
+    <span class = "eyes">EYES</span>
+    <span class = "and">&</span>
+    <br>
+    <span class = "ears">EARS</span>
+  </div>
+  <div class="text"><em>Welcome to my Harmonic Collection "EYES AND EARS" </em>Enjoy!</div>
+</body>
+</html>
