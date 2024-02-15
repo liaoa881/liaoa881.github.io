@@ -1,0 +1,63 @@
+*{
+    margin: auto;
+}
+body{
+    background-color: bisque;
+    font-family: "roca", sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1{
+    font-size: 150px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: rgb(216, 125, 20);
+     transition: all 1s ease-in-out;
+}
+
+h1:hover{
+    font-size: 150px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    font-style: normal;
+    text-align: center;
+    color: rgb(255, 63, 20);
+}
+
+h2{
+    font-size: 40px;
+    color: rgb(216, 125, 20);
+    transition: all 1s ease-in-out;
+}
+
+h2:hover{
+    font-size: 50px;
+    color: rgb(216, 72, 20);
+}
+
+h3{
+    font-size: 20px;
+    color: rgb(132, 67, 2);
+    letter-spacing: 5px;
+}
+
+section{
+    margin-left: 15%;
+}
+
+.title{
+    margin-left: 15%;
+}
+
+ul, ol{
+    font-size: 20px;
+    line-height: 40px;
+    color: rgb(70, 26, 0);
+}
+
+a{
+    color: rgb(47, 105, 47);
+}

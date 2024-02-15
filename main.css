@@ -22,19 +22,30 @@ h2{
     padding-top: 30px;
 }
 
-.covertext{
+.titles{
     font-family: "mundial", sans-serif;
     font-style: normal;
-    font-size: 20px;
+    font-size: 50px;
     font-weight: 100;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
 }
 
-.covertext:hover{
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(44, 39, 45);
+}
+
+.titles:hover{
     font-family: "mundial", sans-serif;
     font-style: normal;
-    font-size: 20px;
+    font-size: 70px;
     font-weight: 700;
-    color: white;
     z-index: 2;
 }
 
@@ -48,37 +59,8 @@ h2{
     font-style: normal;
 }
 
-
-section{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    min-height: 400px;
-    padding: 100px 20vw;
-}
-.backcolor{
-    background-color: rgb(255, 255, 255);
-}
-
-.babel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    background-color: rgb(208, 255, 146);
-    left: 5%;
-    top: 10%;
-    border-radius: 200px;
-    opacity: 1; 
-    transition: 0.3s ease-in-out ;
-    z-index: 1;
-    
-}
-
-.babel:hover{
-    background-color: black;
+.projects{
+    padding-top: 10%;
+    margin-left: 3%;
 }
 
