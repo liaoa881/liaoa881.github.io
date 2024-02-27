@@ -47,9 +47,10 @@ p {
     position: relative;
     display: inline-block;
     width: clamp( 50px, 4vw, 80px);
-    height: 4vw;
-    top: 30%;
-    left: 89%;
+    height: auto;
+    bottom: 2%;
+    left: 45%;
+    margin-bottom: 50px;
     fill: #FFFEF5;
     
 }
