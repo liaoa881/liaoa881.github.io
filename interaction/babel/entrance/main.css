@@ -1,0 +1,211 @@
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    cursor: none;
+}
+
+html{
+    font-size: 16px;
+
+}
+body{
+    background: #FFFEF5;
+    height: 450vh;
+    
+    
+}
+
+.title{
+    padding-left: 3%;
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    letter-spacing: 10px;
+    max-width: 100%; 
+    overflow-x: hidden; 
+}
+
+h1 {
+    font-family: montserrat, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.the{
+    position: relative;
+    font-size: 8vh;
+    left: 3%;
+    margin-top: 40px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+.library{
+    position: relative;
+    font-size: 28vh;
+    top: 3.5vh;
+    left: 15%;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.of{
+    position: relative;
+    font-size: 8vh;
+    top: 2vh;
+    left: 37%;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+.babel{
+    position: relative;
+    font-size: 28vh;
+    left: 35%;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+.name{
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    position: relative;
+    font-size: 5vh;
+    top: -30px;
+    left: 56%;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+    
+}
+
+p{
+    text-align: left;
+    letter-spacing: 1px;
+    margin: auto;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    z-index: 1;
+    
+}
+
+.container{
+    position: relative;
+    width:120vh;
+    top: 35vh;
+    margin: auto;
+}
+
+.containertwo{
+    position: relative;
+    max-width:120vh;
+    top: 180vh;
+    margin: auto;
+}
+
+#hexagon{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 52%;
+    left: 38%;
+}
+
+#hiddenlink{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    left: 120%;
+    fill: #FFFEF5;
+}
+
+#hiddenlink:hover{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    left: 120%;
+    fill: #000000;
+}
+
+#hiddenlinktwo{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 213%;
+    left: 70%;
+   
+}
+
+#plane{
+    position: absolute;
+    top: 240%;
+    z-index: 2;
+}
+
+#planetwo{
+    position: absolute;
+    top: 200%;
+    left: 63.8%;
+    z-index: 1;
+}
+
+#hexagontwo{
+    width: 5vw;
+    height: 5vw;
+    position: absolute;
+    top: 410%;
+    left: 48%;
+    z-index: 2;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+
+  @media (max-width: 100vh) {
+    #hiddenlinktwo{
+        width: 5vw;
+        height: 5vw;
+        position: absolute;
+        top: 210%;
+        left: 70%;
+        z-index: 2;
+    }
+  }
+
+  .cursor{
+    position: fixed;
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    transition: transform .1s ease;
+    pointer-events: none;
+    mix-blend-mode: exclusion;
+    z-index: 3;
+  }
+
+  ::selection { 
+    background: rgb(82, 194, 255);
+    color: rgb(130, 251, 255);
+ }
+
+ 

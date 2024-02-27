@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+
+}
+
+body {
+    background: #FFFEF5;
+    
+}
+
+.side {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    place-items: center;
+    position: absolute;
+    width: 100%;
+  }
+
+  #left-side {
+    background-color: black;
+    width: 60%;
+    z-index: 2;
+  }
+  
+  #left-side p {  
+    color: #FFFEF5;  
+  }
+
+  #right-side {
+    background-color: #FFFEF5;
+  }
+  
+  #right-side p {
+    color: black;
+  }
+
+p {
+    text-align: left;
+    line-height: 1.2;
+    color: black;
+    margin: auto;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(40px, 4vh, 60px);   
+}
+
+#hexagon {
+    position: relative;
+    display: inline-block;
+    width: clamp( 50px, 4vw, 80px);
+    height: auto;
+    top: 5vh;
+}
+
+#hiddenlink {
+    position: relative;
+    display: inline-block;
+    width: clamp( 50px, 4vw, 80px);
+    height: auto;
+    top: 30%;
+    left: 10%;
+    fill: #FFFEF5;
+    
+}
+
+#hiddenlink:hover{
+    fill: #000000;
+}
+
+::selection { 
+    background: rgb(59, 59, 59);
+    color: rgb(249, 249, 249);
+}
+
+.cursor{
+    position: fixed;
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFEF5;
+    transition: transform .1s ease;
+    pointer-events: none;
+    mix-blend-mode: exclusion;
+    z-index: 3;
+  }
+
+  span{
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .container {
+    position: relative;
+    width: 130vh;
+    top: 3vh;
+    margin: auto;
+    cursor: none;
+
+}
+
+
+@media (max-width: 120vh) {
+    .container {
+    position: relative;
+    width: 50vh;
+    top: 4vh;
+    margin: auto;
+    cursor: none;
+
+}
+
+p {
+    text-align: left;
+    letter-spacing: -.1vh;
+    color: black;
+    margin: auto;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(20px, 1vh, 30px);   
+}
+  }
