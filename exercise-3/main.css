@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(25, 167, 255);
+}
+
+#container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.letter {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 30px;
+}
+.cell {
+  width: 30px;
+  height: 30px;
+}
+
+.cell-wing {
+  width: 30px;
+  height: 30px;
+  border-top-left-radius: 0px;
+}
+
+.cell-bottom {
+  width: 30px;
+  height: 30px;
+  border-bottom-right-radius: 0px;
+}
+
+.h {
+  width: 120px;
+}
+
+.i {
+  width: 90px;
+}
+
+.smile {
+  width: 180px;
+}
+
+
+.fill {
+  background-color: rgb(219, 235, 255);
+  transition: border-radius 0.3s linear;
+}
+
+.fill:hover {
+  box-shadow: 0px 4px 10px rgb(25, 167, 255);
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+
+#container:hover .cell-bottom {
+    border-bottom-right-radius: 20px;
+}
+
+#container:hover .cell-wing {
+  border-top-left-radius: 40px;
+}
