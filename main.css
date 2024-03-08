@@ -6,20 +6,33 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 12px;
+}
+
 body{
     background-color:white;
 }
 
+.backcolor{
+    height: 100vh;
+}
+
 h1{
-    font-size: 100px;
+    font-size: clamp(50px, 10vh, 150px);
     font-weight: 100;
+    text-wrap: nowrap;
+    display: flex;
+    position: relative;
 }
 
 h2{
-    font-size: 20px;
+    font-size: clamp(10px, 5vh, 20px);
     font-weight: 100;
     margin-left: 20px;
     padding-top: 30px;
+    display: flex;
+    position: relative;
 }
 
 .titles{
@@ -29,6 +42,35 @@ h2{
     font-weight: 100;
     transition: all .2s ease-in-out;
     text-decoration: none;
+}
+
+.titles-exercises{
+    font-family: "mundial", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    font-weight: 100;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+.category{
+    font-family: "mundial", sans-serif;
+    font-style: normal;
+    font-size: 100px;
+    font-weight: 100;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    color: rgb(57, 186, 255);
+}
+
+.category-exercises{
+    font-family: "mundial", sans-serif;
+    font-style: normal;
+    font-size: 100px;
+    font-weight: 100;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    color: rgb(255, 57, 57);
 }
 
 a{
@@ -49,6 +91,15 @@ a{
     z-index: 2;
 }
 
+.titles-exercises:hover{
+    font-family: "mundial", sans-serif;
+    font-style: normal;
+    font-size: 35px;
+    font-weight: 700;
+    z-index: 2;
+}
+
+
 .header{
     display: flex;
     flex-direction: row;
@@ -60,7 +111,83 @@ a{
 }
 
 .projects{
-    padding-top: 10%;
+    padding-top: 2%;
     margin-left: 3%;
 }
+
+.mini-section{
+    margin-top: 5%;
+}
+
+img{
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    top: 10%;
+    right: 7%;
+    z-index: -1;
+
+    
+}
+
+@media (max-width: 800px) {
+    h1{
+        font-size: clamp(40px, 3vh, 70px);
+        font-weight: 100;
+        text-wrap: nowrap;
+        display: flex;
+        position: relative;
+    }
+    
+    h2{
+        font-size: clamp(10px, 5vh, 20px);
+        font-weight: 100;
+        margin-left: 20px;
+        padding-top: 30px;
+        display: flex;
+        position: relative;
+    }
+
+    .projects{
+        padding-top: 2%;
+        margin-left: 3%;
+        text-align: center;
+    }
+
+    .category{
+        font-size: 50px;
+    }
+    
+    .category-exercises{
+        font-size: 50px;
+    }
+
+    .titles:hover{
+        font-size: 60px;
+    }
+
+    .titles-exercises:hover{
+        font-size: 45px;
+    }
+
+    .titles{
+        font-size: 50px;   
+    }
+    
+    .titles-exercises{ 
+        font-size: 25px;
+    }
+
+    img{
+        position: relative;
+        left: 10px;
+        width: 50%;
+        height: auto; 
+        margin: 0 auto; 
+        display: block; 
+        z-index: -1;
+    }
+    
+}
+
 
