@@ -1,0 +1,96 @@
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: mundial, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+   
+
+
+}
+body{
+    background: white;
+    height: auto;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 160%; /* 80.808px */
+    letter-spacing: 136.32px;
+    position: absolute;
+}
+
+.header{
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+}
+
+.Eggwhat{
+   
+    width: 350px;
+    margin-right: 10vh;
+}
+
+.Eggwhy{
+    width: 350px;
+}
+
+.egg{
+    position: absolute;
+    top: 52%;
+    left: 40%;
+    width: 20vh;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.egg:hover .front {
+    opacity: 0; 
+}
+
+.egg:hover .back {
+    opacity: 1; 
+}
+
+.egg .front{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.egg .back {
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+   
+
+.egg .back {
+    opacity: 0; 
+}
