@@ -65,9 +65,9 @@ a{
 }
 
 .caption{
-    margin-left: 11.5%;
+    margin-left: 12%;
     z-index: 1;
-    margin-top: 73.3%;
+    margin-top: 72.3%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -87,7 +87,7 @@ a{
 .three{
     margin-left: 57.8%;
     z-index: 1;
-    margin-top: 48%;
+    margin-top: 47%;
     position: absolute;
     display: flex;
     justify-content: center;
