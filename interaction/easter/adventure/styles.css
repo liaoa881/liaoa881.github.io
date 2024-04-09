@@ -1,0 +1,280 @@
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: mundial, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    cursor: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #A351D9;
+}
+
+.cursor{
+    position: fixed;
+    width: 5vh;
+    height: 5vh;
+    transform: translate(-50%, -50%);
+    background: #A351D9;
+    transition: transform .1s ease;
+    pointer-events: none;
+    z-index: 3;
+}
+
+  .walls{
+    background-color:#A351D9;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: 1s ease-in-out;
+}
+
+.one{
+    width: 75%;
+    height: 50px;
+}
+
+.two{
+    top: 0%;
+    width: 10%;
+   height: 210%;
+    right: 0%;
+}
+
+.three{
+    top: 0%;
+    width: 10%;
+   height: 210%;
+    right: 0%;
+    z-index: 2;
+}
+
+.three:hover{
+    background-color: #A351D9;
+}
+
+.image{
+    margin-left: 10%;
+    margin-top: 7%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+
+img{
+    width: 50vh;
+    width: 50vh;
+}
+
+body{
+    background: white;
+    height: 200vh;
+    color: #A351D9;
+    transition: 1s ease-in-out;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 160%; /* 80.808px */
+    letter-spacing: 136.32px;
+    transition: 1s ease-in-out;
+}
+
+#title{
+    font-weight: 500;
+    font-size: 200px;
+    letter-spacing: 10px;
+    transition: 1s ease-in-out;
+    
+}
+
+.header{
+    margin-top: 5%;
+    margin-left: 5%;
+    max-width: 80%;
+    
+}
+
+.headertwo{
+    margin-top: 3%;
+    margin-left: 5%;
+    max-width: 80%;
+    
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    top: 110%;
+    right: 15%;
+    transition: 1s ease-in-out;
+   
+}
+
+.containertwo{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    top: 140%;
+    left: 10%;
+    transition: 1s ease-in-out;
+   
+}
+
+h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+    transition: 1s ease-in-out;
+}
+
+.Eggwhat{
+   
+    width: 350px;
+    margin-bottom: 0px;
+    margin-right: 10vh;
+    transition: 1s ease-in-out;
+}
+
+.Eggwhy{
+    width: 350px;
+    transition: 1s ease-in-out;
+}
+
+::selection { 
+    background: #A351D9;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 900px) {
+
+    body{
+        background-color: #A351D9;
+    }
+
+    .one{
+        width: 75%;
+        height: 25px;
+        top: 35%;
+        background-color: #ffffff;
+    }
+
+    .two{
+        top: 125%;
+        width: 350px;
+       height: 250px;
+        right: 20%;
+        background-color: rgb(215, 215, 215);
+    }
+
+    .three{
+        top: 135%;
+        width: 2vh;
+       height: 2vh;
+        right: 40%;
+        background-color:rgb(215, 215, 215);
+        transition: transform .1s ease;
+    }
+
+    .three:hover{
+        background-color: #A351D9;
+    }
+
+    h1{
+        font-size: 20px;
+        width: auto; 
+        letter-spacing: 50.32px;
+        max-width: 100%;
+        color: white;
+    }
+
+    #title{
+        font-weight: 500;
+        font-size: 60px;
+        color: white;
+    }
+
+    img{
+        width: 40vh;
+        width: 40vh;
+    }
+
+    .image{
+        margin-top: 15%;
+        margin-left: 0;
+        position: static;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 70%;
+        right: 25%;
+        color: white;
+
+    }
+
+    .containertwo{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 155%;
+        left: 15%;
+        transition: 1s ease-in-out;
+        color: white;
+       
+    }
+
+    .Eggwhat{
+   
+        width: 300px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .Eggwhy{
+        width: 300px;
+    }
+    
+    html{
+        font-size: 12px;
+    }
+
+    .cursor{
+        background: #ffffff;
+        width: 2vh;
+    height: 2vh;
+      }
+
+      a{
+        text-decoration: none;
+        color: white;
+    }
+
+
+}

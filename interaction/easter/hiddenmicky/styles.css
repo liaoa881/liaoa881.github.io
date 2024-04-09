@@ -1,0 +1,318 @@
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: mundial, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    cursor: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #6f00ff;
+}
+
+#lilo{
+    position: absolute;
+    top: 155%;
+    right: 62%;
+    height: 300px;
+}
+
+#totem{
+    position: absolute;
+    top: 215%;
+    right: 57%;
+    
+}
+
+#pole{
+    position: absolute;
+    top: 170%;
+    right: 15%;
+    height: 350px;
+}
+
+.cursor{
+    position: fixed;
+    width: 5vh;
+    height: 5vh;
+    transform: translate(-50%, -50%);
+    background: #6f00ff;
+    border-radius: 50%;
+    transition: transform .1s ease;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.image{
+    margin-left: 55%;
+    z-index: 1;
+    margin-top: 45%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+
+.caption{
+    margin-left: 11.5%;
+    z-index: 1;
+    margin-top: 73.3%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+.two{
+    margin-left: 10%;
+    z-index: 1;
+    margin-top: 39.5%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+.three{
+    margin-left: 57.8%;
+    z-index: 1;
+    margin-top: 48%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+
+
+img{
+    height: 400px;
+}
+
+body{
+    background: white;
+    height: 250vh;
+    color: #6f00ff;
+    transition: 1s ease-in-out;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 160%; /* 80.808px */
+    letter-spacing: 136.32px;
+    transition: 1s ease-in-out;
+}
+
+#title{
+    font-weight: 500;
+    font-size: 120px;
+    letter-spacing: 10px;
+    transition: 1s ease-in-out;
+    text-wrap: none;
+    color: #6f00ff;
+    
+}
+
+.header{
+    margin-top: 5%;
+    margin-left: 5%;
+    max-width: 80%;
+    
+}
+
+.headertwo{
+    margin-top: 3%;
+    margin-left: 5%;
+    max-width: 80%;
+    
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    top: 90%;
+    right: 15%;
+    transition: 1s ease-in-out;
+   
+}
+
+.containertwo{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    top: 90%;
+    left: 10%;
+    transition: 1s ease-in-out;
+    line-height: 1.7;
+   
+}
+
+
+h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+    transition: 1s ease-in-out;
+}
+
+.Eggwhat{
+   
+    width: 350px;
+    margin-bottom: 0px;
+    margin-right: 10vh;
+    transition: 1s ease-in-out;
+}
+
+.Eggwhy{
+    width: 350px;
+    transition: 1s ease-in-out;
+}
+
+::selection { 
+    background: #000fff;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 800px) {
+
+    body{
+        background-color: #000fff;
+        height: 220vh;
+        color: rgb(255, 255, 255);
+    }
+
+    h1{
+        font-size: 20px;
+        width: auto; 
+        letter-spacing: 50.32px;
+        max-width: 100%;
+  
+    }
+
+    #title{
+        font-weight: 500;
+        font-size: 30px;
+        color: rgb(255, 255, 255);
+    }
+    
+
+    img{
+        height: 50px;
+    }
+
+    .image{
+        margin-top: 200%;
+        margin-left: 0;
+        position: absolute;
+        right: 12%;
+    }
+
+    #pole{
+        position: absolute;
+        top: 153%;
+        right: 24%;
+        height: 240px;
+    }
+
+    #totem{
+        position: absolute;
+        top: 188%;
+        right: 24%;
+        height: 240px;
+    }
+    
+    #lilo{
+        position: absolute;
+        top: 123%;
+        right: 24%;
+        height: 200px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 35%;
+        right: 25%;
+
+    }
+
+    .containertwo{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 85%;
+        right: 21%;
+   
+
+    }
+
+    .Eggwhat{
+   
+        width: 300px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .Eggwhy{
+        width: 300px;
+    }
+    
+    html{
+        font-size: 12px;
+    }
+
+    .cursor{
+        background: #ffffff;
+        width: 2vh;
+        height: 2vh;
+      }
+
+      a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+       .caption{
+        margin-left: 14%;
+        margin-top: 195%;
+    }
+    .two{
+        margin-left: 14%;
+        margin-top: 169%;
+    }
+    .three{
+        margin-left: 14%;
+        margin-top: 227%;
+       
+    }
+    .four{
+        margin-left: 14%;
+        margin-top: 295%;
+       
+    }
+
+}

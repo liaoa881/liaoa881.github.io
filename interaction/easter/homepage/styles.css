@@ -16,7 +16,7 @@ html{
      
 }
 body{
-    background: white;
+    background-color: white;
     height: auto;
     transition: 1s ease-in-out;
 }
@@ -30,16 +30,29 @@ h1{
 }
 
 .header{
-    margin-top: 5%;
+    margin-top: 3%;
     margin-left: 5%;
     max-width: 80%;
     
 }
 
 .container{
+    margin-top: 3%;
     width: 100vh;
-    z-index: 2s;
+    z-index: 2;
 }
+
+a{
+    text-decoration: none;
+    color: #000000;
+    transition: .01s ease-in-out;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #e10000;
+}
+
 
 .cursor{
     position: fixed;
@@ -53,11 +66,60 @@ h1{
     z-index: 3;
   }
 
+  #partfour{
+    fill: rgb(255, 0, 0);
+  }
+
+
   #partone:hover{
-    fill: rgb(211, 211, 71);
+    fill: #A351D9;
+    transition: transform .1s ease;
+  }
+  #parttwo:hover{
+    fill: #1eb528;
+    transition: transform .1s ease;
+  }
+  #parttop:hover{
+    fill: rgb(111, 73, 19);
+    transition: transform .1s ease;
+  }
+  #partthree:hover{
+    fill: #6f00ff;
+    transition: transform .1s ease;
+  }
+  #partfour:hover{
+    fill: #933918;
+    transition: transform .1s ease;
+  }
+  #partfive:hover{
+    fill: #ff8e15;
+    transition: transform .1s ease;
+  }
+  #partsix:hover{
+    fill: #2025a4;
+    transition: transform .1s ease;
+  }
+  #partseven:hover{
+    fill: #d6c800;
+    transition: transform .1s ease;
+  }
+  
+  #partnine:hover{
+    fill: #2d48de;
+    transition: transform .1s ease;
+  }
+  #partten:hover{
+    fill: #f63c20;
+    transition: transform .1s ease;
+  }
+  #parteleven:hover{
+    fill: #432c0e;
     transition: transform .1s ease;
   }
 
+  .my-color{
+    position: absolute;
+  }
 
 
   @media (max-width: 900px) {
@@ -78,6 +140,11 @@ h1{
         height: 150vh;
     }
 
+    a:hover{
+      text-decoration: none;
+      color: #ffffff;
+    }
+
     .cursor{
         position: fixed;
         width: 5vh;
@@ -90,6 +157,40 @@ h1{
         z-index: -1;
       }
     
+      #partone{
+        stroke: rgb(255, 0, 0);
+      }
+      #parttwo{
+        stroke: rgb(255, 0, 0);
+      }
+      #partthree{
+        stroke: rgb(255, 0, 0);
+      }
+      #partfour{
+        stroke: rgb(255, 0, 0) ;
+      }
+      #partfive{
+        stroke: rgb(255, 0, 0) ;
+      }
+      #partsix{
+        stroke: rgb(255, 0, 0) ;
+      }
+      #partseven{
+        stroke: rgb(255, 0, 0) ;
+      }
+      #partstroke{
+        stroke: rgb(255, 0, 0) ;
+      }
+      
+      #partnine{
+        stroke: rgb(255, 0, 0) ;
+      }
+      #partten{
+        stroke: rgb(255, 0, 0) ;
+      }
+      #parteleven{
+        stroke: rgb(255, 0, 0) ;
+      }
 
 }
 

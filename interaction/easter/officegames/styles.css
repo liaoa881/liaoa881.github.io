@@ -1,0 +1,306 @@
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: mundial, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    cursor: none;
+}
+
+a{
+    text-decoration: none;
+    color: #2025a4;
+}
+
+#bear{
+    position: absolute;
+    top: 120%;
+    left: 15%;
+    width: 400px;
+    z-index: -1;
+}
+
+#credit{
+    position: absolute;
+    top: 95%;
+    left: 15%;
+    width: 400px;
+    z-index: -1;
+}
+
+.cursor{
+    position: fixed;
+    width: 5vh;
+    height: 5vh;
+    transform: translate(-50%, -50%);
+    background: #2025a4;
+    border-radius: 50%;
+    transition: transform .1s ease;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.image{
+    margin-left: 15%;
+    z-index: 1;
+    margin-top: 45%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+    z-index: -1;
+}
+
+.caption{
+    margin-left: 15%;
+    z-index: 1;
+    margin-top: 43%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+.two{
+    margin-left: 15%;
+    z-index: 1;
+    margin-top: 4%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+.three{
+    margin-left: 15%;
+    z-index: 1;
+    margin-top: 18%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+
+
+img{
+    width: 400px;
+}
+
+body{
+    background: white;
+    height: 220vh;
+    color: #2025a4;
+    transition: 1s ease-in-out;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 160%; /* 80.808px */
+    letter-spacing: 136.32px;
+    transition: 1s ease-in-out;
+    text-wrap: none;
+}
+
+#title{
+    font-weight: 500;
+    font-size: 140px;
+    letter-spacing: 10px;
+    transition: 1s ease-in-out;
+    
+}
+
+.header{
+    margin-top: 5%;
+    margin-left: 5%;
+    max-width: 80%;
+    z-index: 4;
+    
+}
+
+.headertwo{
+    margin-top: 3%;
+    margin-left: 5%;
+    max-width: 80%;
+    
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    top: 93%;
+    right: 15%;
+    transition: 1s ease-in-out;
+   
+}
+
+.containertwo{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    top: 147%;
+    right: 20%;
+    transition: 1s ease-in-out;
+    line-height: 1.7;
+   
+}
+
+
+h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+    transition: 1s ease-in-out;
+}
+
+.Eggwhat{
+   
+    width: 350px;
+    margin-bottom: 0px;
+    margin-right: 10vh;
+    transition: 1s ease-in-out;
+}
+
+.Eggwhy{
+    width: 350px;
+    transition: 1s ease-in-out;
+}
+
+::selection { 
+    background: #2025a4;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 800px) {
+
+    body{
+        background-color: #2025a4;
+        height: 220vh;
+        color: white;
+    }
+
+    h1{
+        font-size: 20px;
+        width: auto; 
+        letter-spacing: 50.32px;
+        max-width: 100%;
+  
+    }
+
+    #title{
+        font-weight: 500;
+        font-size: 40px;
+    
+    }
+
+    img{
+        width: 300px;
+    }
+
+    .image{
+        margin-top: 180%;
+        margin-left: 0;
+        position: absolute;
+        right: 25%;
+    }
+
+    #bear{
+        position: absolute;
+        top: 98%;
+        left: 14%;
+        width: 300px;
+    }
+    
+    #credit{
+        position: absolute;
+        top: 80%;
+        left: 14%;
+        width: 300px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 40%;
+        right: 25%;
+   
+
+    }
+
+    .containertwo{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 160%;
+        right: 25%;
+   
+
+    }
+
+    .Eggwhat{
+   
+        width: 300px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .Eggwhy{
+        width: 300px;
+    }
+    
+    html{
+        font-size: 12px;
+    }
+
+    .cursor{
+        background: white;;
+        width: 2vh;
+        height: 2vh;
+      }
+
+      a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .caption{
+        margin-left: 15%;
+        margin-top: 175%;
+    }
+    .two{
+        margin-left: 15%;
+        margin-top: 79%;
+    }
+    .three{
+        margin-left: 15%;
+        margin-top: 115%;
+       
+    }
+
+    ::selection { 
+        background:rgb(255, 255, 255);
+        color:  #2025a4;
+    }
+
+}

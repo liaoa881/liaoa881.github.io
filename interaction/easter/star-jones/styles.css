@@ -1,0 +1,303 @@
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    font-family: mundial, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    cursor: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #2d48de;
+}
+
+.cursor{
+    position: fixed;
+    width: 5vh;
+    height: 5vh;
+    transform: translate(-50%, -50%);
+    background: #2d48de;
+    transition: transform .1s ease;
+    pointer-events: none;
+    z-index: 3;
+}
+
+
+.three:hover{
+    background-color: #A351D9;
+}
+
+.image{
+    margin-left: 10%;
+    margin-top: 7%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s ease-in-out;
+}
+
+img{
+    width: 100vh;
+    height: 50vh;
+}
+
+#jones{
+    position: absolute;
+    top: 270%;
+    width: 50%;
+    height: 50%;
+    margin-left: 10%;
+    transition: 1s ease-in-out;
+}
+
+#character{
+    position: absolute;
+    top: 270%;
+    right: 20%;
+    width: 20%;
+    height: 50%;
+    margin-left: 10%;
+}
+
+body{
+    background: white;
+    height: 350vh;
+    color: #2d48de;
+    transition: 1s ease-in-out;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 50px;
+    line-height: 160%; /* 80.808px */
+    letter-spacing: 136.32px;
+    transition: 1s ease-in-out;
+}
+
+#title{
+    font-weight: 500;
+    font-size: 200px;
+    letter-spacing: 10px;
+    transition: 1s ease-in-out;
+    
+}
+
+.header{
+    margin-top: 5%;
+    margin-left: 5%;
+    max-width: 80%;
+    
+}
+
+.headertwo{
+    margin-top: 3%;
+    margin-left: 5%;
+    max-width: 80%;
+    
+}
+
+#hiero{
+    position: absolute;
+    z-index: -1;
+    top: 200%;
+    left: 50%;
+    fill: #2d48de;
+    transition: 1s ease-in-out;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    top: 110%;
+    right: 3%;
+    transition: 1s ease-in-out;
+   
+}
+
+.containertwo{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    top: 190%;
+    left: 10%;
+    transition: 1s ease-in-out;
+   
+}
+
+.containerthree{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    top: 325%;
+    left: 55%;
+    transition: 1s ease-in-out;
+   
+}
+
+h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 5%;
+    transition: 1s ease-in-out;
+}
+
+.Eggwhat{
+   
+    width: 350px;
+    margin-bottom: 0px;
+    margin-right: 10vh;
+    transition: 1s ease-in-out;
+}
+
+.Eggwhy{
+    width: 350px;
+    transition: 1s ease-in-out;
+}
+
+::selection { 
+    background: #2d48de;;
+    color: rgb(255, 255, 255);
+}
+
+
+@media (max-width: 900px) {
+
+    body{
+        background-color: #2d48de;
+        height: 310vh;
+    }
+
+
+    h1{
+        font-size: 15px;
+        width: auto; 
+        letter-spacing: 50.32px;
+        max-width: 100%;
+        color: white;
+    }
+
+    #title{
+        font-weight: 500;
+        font-size: 60px;
+        color: white;
+    }
+
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 80%;
+        right: 25%;
+        color: white;
+
+    }
+
+    .containertwo{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 160%;
+        left: 15%;
+        transition: 1s ease-in-out;
+        color: white;
+       
+    }
+
+    .Eggwhat{
+   
+        width: 300px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .Eggwhy{
+        width: 300px;
+    }
+    
+    html{
+        font-size: 12px;
+    }
+
+    .cursor{
+        background: #ffffff;
+        width: 2vh;
+    height: 2vh;
+      }
+
+      a{
+        text-decoration: none;
+        color: white;
+    }
+
+    img{
+        width: 80%;
+        height: 50%;
+    }
+
+    .image{
+        margin-top: 8%;
+        margin-left: 0;
+        position: static;
+    }
+
+    #jones{
+        top: 195%;
+        width: 80%;
+        height: 25%;
+    }
+
+    #hiero{
+        position: absolute;
+        z-index: -1;
+        top: 115%;
+        width: 20vh;
+        left: 25%;
+        fill: white;
+    }
+
+    #character{
+        position: absolute;
+        top: 230%;
+        right: 25%;
+        width: 50%;
+        height: 50%;
+        margin-left: 10%;
+    }
+
+    .containerthree{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 290%;
+        left: 15%;
+        transition: 1s ease-in-out;
+        color: white;
+       
+    }
+
+}
