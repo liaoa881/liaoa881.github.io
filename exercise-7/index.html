@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/jxk2gvj.css">
+    <title>Ex7: MiniTool </title>
+</head>
+<body>
+    <h1 id = "title">The Morph Tool</h1>
+    <div class ="container">
+        <p>Shape Change</p>
+        <input type="button" id="my-button" value="Change Circle" onclick="changeCircle()">
+        <p>Scale - Width</p>
+        <input type="range" id="width-range" min="0" max="500" value="50" oninput="changeWidth()">
+        <p>Scale - Height</p>
+        <input type="range" id="height-range" min="0" max="500" value="50" oninput="changeHeight()">
+        <p>Rotate</p>
+        <input type="range" id="rotate-range" min="0" max="360" value="0" oninput="changeDeg()">
+    </div>
+    <div id="box"></div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
