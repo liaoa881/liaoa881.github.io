@@ -1,0 +1,32 @@
+body {
+  font-size: 48px;
+  letter-spacing: -0.03em;
+  transition: 1s;
+  color: black;
+
+}
+
+#myShape {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background-color: hsl(252, 100%, 53%);
+  left: 50%;
+  top: 50%;
+  border-radius: 0%;
+  transform: translate(-50%, -50%);
+  transition: 1s linear;
+  z-index: 2;
+  mix-blend-mode: exclusion;
+}
+
+.container{
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 150px;
+  margin-top: 20%;
+  display: block;
+  text-align: center;
+
+}
