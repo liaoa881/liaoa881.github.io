@@ -1,3 +1,11 @@
+const cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove', (e) => {
+  cursor.style.left = e.clientX + 'px';
+  cursor.style.top = e.clientY + 'px';
+
+})
+
+
 function updateTime() {
   let today = new Date();
   console.log(today);
@@ -13,7 +21,11 @@ function updateTime() {
   console.log(days[thisWeekday]);
   let thisYear = today.getFullYear();
   let dateElem = document.getElementById("dateHere");
-  dateElem.innerHTML = months[thisMonth] + " " + thisDate + ", " + thisYear;
+  let dateDay = document.getElementById("dateDay");
+  let dateYear = document.getElementById("dateYear");
+  dateElem.innerHTML = months[thisMonth];
+  dateDay.innerHTML = thisDate ;
+  dateYear.innerHTML = thisYear ;
   let thisHour = today.getHours();
   let thisMinute = today.getMinutes();
   let thisSecond = today.getSeconds();
@@ -36,11 +48,14 @@ function updateTime() {
   
   // ADD TO INNER HTML
   let timeElem = document.getElementById("timeHere");
-  timeElem.innerHTML = + thisHour + ":" + thisMinute + ":" + thisSecond;
+  timeElem.innerHTML = + thisHour + ":" + thisMinute ;
     
   }
 
   setInterval(updateTime, 1000);
+
+
+
 
   function changeShape() {
     let secondElem = document.getElementById("myShape");
@@ -51,12 +66,19 @@ function updateTime() {
     let viewportHeight = window.innerHeight;
     secondElem.style.top = Math.random() * (viewportHeight - secondElem.clientHeight) + "px";
     secondElem.style.left = Math.random() * (viewportWidth - secondElem.clientWidth) + "px";
-    secondElem.style.width = Math.random() * 500 + "px";
-    secondElem.style.height = Math.random() * 500 + "px";
+    secondElem.style.width = Math.random() * 800 + "px";
+    secondElem.style.height = Math.random() * 800 + "px";
     secondElem.style.borderRadius = Math.random() * 50 + "%";
     secondElem.style.transformOrigin = "center";
+    secondElem.style.textAlign = "center";
     secondElem.style.transform = "rotate(" + Math.random() * 360 + "deg)";
 }
 
 setInterval(changeShape, 1000);
+
+function map(value, low1, high1, low2, high2){
+  
+  return low2 + (high2 - low2) * (value - low1) / (high1 - low1);
+
+}
 
