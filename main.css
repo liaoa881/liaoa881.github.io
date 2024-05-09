@@ -12,6 +12,7 @@ html{
 
 body{
     background-color:white;
+    height: 120vh;
 }
 
 .backcolor{
@@ -60,7 +61,7 @@ h2{
     font-weight: 100;
     transition: all .2s ease-in-out;
     text-decoration: none;
-    color: rgb(57, 186, 255);
+    color: rgb(0, 0, 0);
 }
 
 .category-exercises{
@@ -70,7 +71,7 @@ h2{
     font-weight: 100;
     transition: all .2s ease-in-out;
     text-decoration: none;
-    color: rgb(255, 57, 57);
+    color: rgb(58, 58, 58);
 }
 
 a{
@@ -116,7 +117,7 @@ a{
 }
 
 .mini-section{
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 img{
